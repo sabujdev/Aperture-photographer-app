@@ -1,20 +1,19 @@
 import "./App.css";
-// import Header from "../src/components/Pages/Header/Header";
 import Header from "./components/Pages/Header/Header";
 import { Route, Routes } from "react-router-dom";
 import Home from "./components/Pages/Home/Home";
-import Blogs from "./components/Pages/Blog/Blog";
+import Blogs from "./components/Pages/Blogs/Blogs";
 import About from "./components/Pages/About/About";
-import Checkout from "./components/Checkout/Checkout";
-import CheckoutSuccess from "./components/CheckoutSuccess/CheckoutSuccess";
-import NotFound from "./components/NotFound/NotFound";
-import Login from "./components/Login/Login";
-import SignUp from "./components/SignUp/SignUp";
-import Footer from "./components/Footer/Footer";
-import ResetPassword from "./components/ResetPassword/ResetPassword";
-import RequireAuth from "./components/RequireAuth/RequireAuth";
-import MyAccount from "./components/MyAccount/MyAccount";
-import RedirectToAccount from "./components/RedirectToAccount/RedirectToAccount";
+// import Checkout from "./components/Pages/Checkout/Checkout";
+import CheckoutSuccess from "./components/Pages/CheckoutSuccess/CheckoutSuccess";
+import NotFound from "./components/Shared/NotFound/NotFound";
+import Login from "./components/Pages/Login/Login";
+import SignUp from "./components/Pages/SignUp/SignUp";
+import Footer from "./components/Shared/Footer/Footer";
+import ResetPassword from "./components/Pages/ResetPassword/ResetPassword";
+import RequireAuth from "./components/Pages/RequireAuth/RequireAuth";
+import MyAccount from "./components/Pages/MyAccount/MyAccount";
+import RedirectToAccount from "./components/Pages/RedirectToAccount/RedirectToAccount";
 
 function App() {
   return (
@@ -49,14 +48,14 @@ function App() {
             </RedirectToAccount>
           }
         ></Route>
-        <Route
+        {/* <Route
           path="/service/:serviceId"
           element={
             <RequireAuth>
               <Checkout></Checkout>
             </RequireAuth>
           }
-        ></Route>
+        ></Route> */}
         <Route
           path="/checkout-success"
           element={<CheckoutSuccess></CheckoutSuccess>}

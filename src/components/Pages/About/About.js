@@ -9,7 +9,7 @@ const About = () => {
       >
         <h2 className="text-2xl mb-5">About Me & My Goal</h2>
         <p className="text-slate-400">
-          <span className="text-lg text-slate-200">Hi, I am Imran Ali.</span> <br />I am from Moulvibazar, Sylhet.
+          <span className="text-lg text-slate-200">Hi, I am Sabuj Mahonto</span> <br />I am from Dinajpur.
           I am so much passionate on coding. Programming hero influenced me a
           lot. I want to be a senior web developer and work for a high tech
           company. Currently i am working with wordpress. And i learnt it myself

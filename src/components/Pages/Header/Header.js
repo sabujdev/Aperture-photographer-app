@@ -4,7 +4,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { RiMenu3Fill } from "react-icons/ri";
 import { CgClose } from "react-icons/cg";
 import { useAuthState } from "react-firebase-hooks/auth";
-import auth from "../../firebase.init";
+import auth from "../../../firebase.init";
 import { signOut } from "firebase/auth";
 
 const Header = () => {
