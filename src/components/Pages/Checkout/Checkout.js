@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
 import { useNavigate, useParams } from "react-router-dom";
-import auth from "../../firebase.init";
+import auth from "../../../firebase.init";
 
 const Checkout = () => {
   const [service, setService] = useState([]);
@@ -15,7 +15,8 @@ const Checkout = () => {
     formState: { errors },
   } = useForm();
   useEffect(() => {
-    fetch(process.env.PUBLIC_URL + "/services.json")
+    // process.env.PUBLIC_URL + 
+    fetch("./services.json")
       .then((res) => res.json())
       .then((data) =>
         setService(data.find((s) => s.id === parseInt(serviceId)))

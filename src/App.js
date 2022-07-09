@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./components/Pages/Home/Home";
 import Blogs from "./components/Pages/Blogs/Blogs";
 import About from "./components/Pages/About/About";
-// import Checkout from "./components/Pages/Checkout/Checkout";
+import Checkout from "./components/Pages/Checkout/Checkout";
 import CheckoutSuccess from "./components/Pages/CheckoutSuccess/CheckoutSuccess";
 import NotFound from "./components/Shared/NotFound/NotFound";
 import Login from "./components/Pages/Login/Login";
@@ -48,14 +48,14 @@ function App() {
             </RedirectToAccount>
           }
         ></Route>
-        {/* <Route
+        <Route
           path="/service/:serviceId"
           element={
             <RequireAuth>
               <Checkout></Checkout>
             </RequireAuth>
           }
-        ></Route> */}
+        ></Route>
         <Route
           path="/checkout-success"
           element={<CheckoutSuccess></CheckoutSuccess>}
