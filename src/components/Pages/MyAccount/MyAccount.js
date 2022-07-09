@@ -20,8 +20,12 @@ const MyAccount = () => {
         <h2 className="text-3xl text-center mb-16">Account</h2>
         <div className="flex gap-5 justify-center">
           <div className="user-pfl text-left bg-[#0a2e43] p-6 rounded-lg w-full max-w-2xl shadow-2xl">
-            <img src={user.photoURL ? user.photoURL : defaultUserPic} alt="" className="rounded-full"/>
-            
+            <img
+              src={user.photoURL ? user.photoURL : defaultUserPic}
+              alt=""
+              className="rounded-full"
+            />
+
             <h3 className="text-xl font-semibold mt-4">
               {user.displayName ? user.displayName : "Sabuj Mahonto"}
             </h3>

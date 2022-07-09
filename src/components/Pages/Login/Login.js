@@ -21,12 +21,8 @@ const Login = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const from = location.state?.from?.pathname || "/";
-  const [
-    signInWithEmailAndPassword,
-    user,
-    loading,
-    loginError,
-  ] = useSignInWithEmailAndPassword(auth);
+  const [signInWithEmailAndPassword, user, loading, loginError] =
+    useSignInWithEmailAndPassword(auth);
 
   const handleLogin = (data) => {
     const { email, password } = data;

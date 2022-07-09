@@ -48,7 +48,10 @@ const SignUp = () => {
         <div className="text-white bg-[#01151f] p-5 md:p-10 w-full max-w-md rounded-lg my-20 shadow-2xl">
           <div className="flex items-center gap-3 mb-10">
             <h1 className="text-2xl">Sign up</h1>
-            <div className="flex-1 w-full h-[2px] bg-yellow-600" style={{maxWidth:'80px'}}></div>
+            <div
+              className="flex-1 w-full h-[2px] bg-yellow-600"
+              style={{ maxWidth: "80px" }}
+            ></div>
           </div>
           <form
             onSubmit={handleSubmit(handleSignUp)}
@@ -60,7 +63,7 @@ const SignUp = () => {
               className="py-3 px-5 rounded-full focus:outline-none bg-[#07273a] focus:bg-[#0a2e43] text-white w-full"
               type="text"
               name="displayName"
-              placeholder="Name..."
+              placeholder="Full Name..."
             />
             {errors.displayName?.message && (
               <p className="text-red-400 text-left ml-5">

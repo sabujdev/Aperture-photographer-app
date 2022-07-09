@@ -16,7 +16,7 @@ const Banner = () => {
           </p>
           <div className="flex md:items-center flex-col md:flex-row gap-7 mt-10">
             <Link to="gallery" spy={true} smooth={true} duration={700}>
-              <button className="text-black hover:italic transition-all bg-yellow-500 hover:bg-[#f2a70c] flex gap-3 items-center px-10 py-3 rounded-full">
+              <button className="text-black hover:italic transition-all bg-yellow-500 hover:bg-[#f2a70c] flex gap-3 items-center px-5 py-3 rounded-full">
                 Explore my works
                 <BsArrowRight className="text-xl"></BsArrowRight>
               </button>
@@ -26,7 +26,12 @@ const Banner = () => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
                 <span className="rounded-full h-4 w-4 bg-yellow-500"></span>
               </span>
-              <Link to="services" spy={true} smooth={true} duration={700} className="cursor-pointer">Available for new project</Link>
+              <Link to="services" spy={true} smooth={true} duration={700} className="cursor-pointer">
+              <button className="text-black hover:italic transition-all bg-yellow-500 hover:bg-[#f2a70c] flex gap-3 items-center px-5 py-3 rounded-full">
+              Available services
+               <BsArrowRight className="text-xl"></BsArrowRight>
+              </button>
+             </Link>
             </div>
           </div>
         </div>

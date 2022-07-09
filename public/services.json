@@ -1,1 +1,23 @@
-[{}]
+[
+  {
+    "id": "1",
+    "name": "Still photography",
+    "details": "This package is idle for 1 product photoshoot. It includes 20 digital images of your product.",
+    "image": "",
+    "price": "399"
+  },
+  {
+    "id": "3",
+    "name": "Cinematography",
+    "details": "This service includes 5 high 4k resolution cinematography videos with super smooth animation.",
+    "image": "",
+    "price": "999"
+  },
+  {
+    "id": "4",
+    "name": "Both",
+    "details": "I will do both of photography & cinematography for your product on your demand.",
+    "image": "",
+    "price": "2099"
+  }
+]
