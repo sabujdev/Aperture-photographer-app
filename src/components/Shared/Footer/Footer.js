@@ -48,9 +48,9 @@ const Footer = () => {
               <li>
                 <Link
                   className="hover:text-[#f2a70c] hover:italic"
-                  to="/contact"
+                  to="/blogs"
                 >
-                  Contact
+                  Blogs
                 </Link>
               </li>
               <li>
